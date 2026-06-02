@@ -11,7 +11,7 @@ class GitCourer < Formula
 
   if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
     url "https://github.com/blak0p/git-courer/releases/download/v2.1.1/git-courer_2.1.1_linux_amd64.tar.gz"
-    sha256 "39aebd0b4cde1ede26f81c249dc9a5ae36e6ea8e406c637dce587cd936ae4541"
+    sha256 "7b0d933826fdd8c343a56181b490d0bb5619f698e75c5dc7a906141a602b7250"
     define_method(:install) do
       bin.install "git-courer"
     end
