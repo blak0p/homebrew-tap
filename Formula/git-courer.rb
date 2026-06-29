@@ -5,13 +5,13 @@
 class GitCourer < Formula
   desc "AI-powered local git operations via MCP. Zero cloud tokens for git."
   homepage "https://github.com/blak0p/git-courer"
-  version "2.9.0"
+  version "2.10.0"
   license "MIT"
   depends_on :linux
 
   if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-    url "https://github.com/blak0p/git-courer/releases/download/v2.9.0/git-courer_2.9.0_linux_amd64.tar.gz"
-    sha256 "d8eb6e3e04fa5ac93b258e8cd945c41482c8cd47050bfd9a7894069f2f4e7be3"
+    url "https://github.com/blak0p/git-courer/releases/download/v2.10.0/git-courer_2.10.0_linux_amd64.tar.gz"
+    sha256 "7540d42fa8cbb23c160219d019a88ce0969ae0bf7d7910ebab0d8cfefaa26f82"
     define_method(:install) do
       bin.install "git-courer"
     end
