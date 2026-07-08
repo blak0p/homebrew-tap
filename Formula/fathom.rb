@@ -5,13 +5,13 @@
 class Fathom < Formula
   desc "Repository impact analysis for Pull Requests. Know what a PR actually touches."
   homepage "https://github.com/blak0p/Fathom"
-  version "0.0.1"
+  version "0.1.0-beta"
   license "MIT"
   depends_on :linux
 
   if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-    url "https://github.com/blak0p/Fathom/releases/download/v0.0.1/fathom_0.0.1_linux_amd64.tar.gz"
-    sha256 "c5bd12c9b8a21779919a215d4e66ead48eff2d94828deeb177c01cce2119da0c"
+    url "https://github.com/blak0p/Fathom/releases/download/v0.1.0-beta/fathom_0.1.0-beta_linux_amd64.tar.gz"
+    sha256 "b4a2f5a324e46a205a5f593fc4608d8bfd1ae7e3f9f809d0ebfbf55b1562cf42"
     define_method(:install) do
       bin.install "fathom"
     end
